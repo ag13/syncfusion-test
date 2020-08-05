@@ -80,10 +80,12 @@ let connectors = [
 
 function App() {
   return (
-    <div className="App">
-       <DiagramComponent id="diagram" width={"100%"} height={"550px"} nodes={nodes}
-    connectors={connectors} />
-    </div>
+    <React.StrictMode>
+      <div className="App">
+        <DiagramComponent id="diagram" width={"100%"} height={"550px"} nodes={nodes}
+      connectors={connectors} />
+      </div>
+    </React.StrictMode>
   );
 }
 
